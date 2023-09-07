@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>PRA OpenDag Info</title>
+</head>
+
+
+<body>
+    <!-- Navbar -->
+
+    <div id="navbar">
+        <a href="#section1">Home</a>
+        <a href="#section2">Vakken</a>
+        <a href="#section3">Docenten</a>
+        <a href="#section4">Rooster/Blokken</a>
+        <a href="#section5">Persoonlijke Ervaring</a>
+        <a href="#section6">Contact</a>
+    </div>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-50px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+    <div class="container">
+
+
+
+        <!-- Homepage -->
+        <div class="main" id="section1">
+            <div class="home-curio-img">
+                <img src="img/bap.png">
+            </div>
+            <div>
+                <p>lorem ipsum oifadldakjflakdjfalfdkfj</p>
+            </div>
+        </div>
+
+        <!-- Tablink with subjects -->
+        <div class="main" id="section2">
+            <button class="tablink" onclick="openPage('Engels', this, '#663398')" id="defaultOpen">Engels</button>
+            <button class="tablink" onclick="openPage('Nederlands', this, '#6b438e')">Nederlands</button>
+            <button class="tablink" onclick="openPage('Rekenen', this, '#5c3f14')">Rekenen</button>
+            <button class="tablink" onclick="openPage('Mentoruur', this, '#c9a46d')">Mentoruur</button>
+            <button class="tablink" onclick="openPage('NATIVE', this, '#c9a46d')">NATIVE</button>
+            <button class="tablink" onclick="openPage('WEB', this, '#c9a46d')">WEB</button>
+            <button class="tablink" onclick="openPage('PRO', this, '#c9a46d')">PRO</button>
+            <button class="tablink" onclick="openPage('PRA', this, '#c9a46d')">PRA</button>
+
+            <div id="Engels" class="tabcontent">
+                <h3>Engels</h3>
+                <p>lorem ipsum</p>
+            </div>
+
+            <div id="Nederlands" class="tabcontent">
+                <h3>Nederlands</h3>
+                <p>lorem ipsum</p>
+            </div>
+
+            <div id="Rekenen" class="tabcontent">
+                <h3>Rekenen</h3>
+                <p>lorem ipsum</p>
+            </div>
+
+            <div id="Mentoruur" class="tabcontent">
+                <h3>Mentoruur</h3>
+                <p>lorem ipsum</p>
+            </div>
+
+            <div id="NATIVE" class="tabcontent">
+                <h3>NATIVE</h3>
+                <p>lorem ipsum</p>
+            </div>
+
+            <div id="WEB" class="tabcontent">
+                <h3>WEB</h3>
+                <p>lorem ipsum</p>
+            </div>
+
+            <div id="PRO" class="tabcontent">
+                <h3>PRO</h3>
+                <p>lorem ipsum</p>
+            </div>
+
+            <div id="PRA" class="tabcontent">
+                <h3>PRA</h3>
+                <p>lorem ipsum</p>
+            </div>
+            <script type="text/javascript">
+                function openPage(pageName, elmnt, color) {
+                    var i, tabcontent, tablinks;
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablink");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].style.backgroundColor = "";
+                    }
+                    document.getElementById(pageName).style.display = "block";
+                    elmnt.style.backgroundColor = color;
+                }
+                document.getElementById("defaultOpen").click();
+            </script>
+
+        </div>
+
+        <!-- Grid with teachers -->
+        <div class="main" id="section3">
+
+        </div>
+
+        <!-- Caroussel/Slideshow -->
+        <div class="main" id="section4">
+
+        </div>
+
+        <!-- Personal experience text -->
+        <div class="main" id="section5">
+
+        </div>
+
+        <!-- Contact info & Google maps interactive -->
+        <div class="main" id="section6">
+
+        </div>
+    </div>
+</body>
+
+
+</html>
