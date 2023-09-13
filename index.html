@@ -11,90 +11,106 @@
 
 <body>
     <!-- Navbar -->
-
-    <div id="navbar">
-        <a href="#section1">Home</a>
-        <a href="#section2">Vakken</a>
-        <a href="#section3">Docenten</a>
-        <a href="#section4">Rooster/Blokken</a>
-        <a href="#section5">Persoonlijke Ervaring</a>
-        <a href="#section6">Contact</a>
-    </div>
-    <script>
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function () {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                document.getElementById("navbar").style.top = "0";
-            } else {
-                document.getElementById("navbar").style.top = "-50px";
+    <div class="background-img">
+        <div id="navbar">
+            <a href="#section1">Home</a>
+            <a href="#section2">Vakken</a>
+            <a href="#section3">Docenten</a>
+            <a href="#section4">Rooster/Blokken</a>
+            <a href="#section5">Persoonlijke Ervaring</a>
+            <a href="#section6">Contact</a>
+        </div>
+        <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function () {
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("navbar").style.top = "0";
+                } else {
+                    document.getElementById("navbar").style.top = "-100px";
+                }
+                prevScrollpos = currentScrollPos;
             }
-            prevScrollpos = currentScrollPos;
-        }
-    </script>
-    <div class="container">
-
-
-
+        </script>
         <!-- Homepage -->
         <div class="main" id="section1">
             <div class="home-curio-img">
-                <img src="img/roze-curio-logo.png">
+                <img src="img/knipplein.jpg">
             </div>
-            <div>
-                <p>lorem ipsum oifadldakjflakdjfalfdkfj</p>
+            <div class="paragraph">
+                <p>Welkom bij een van de velen informatiewebsites over de MBO Niveau-4 opleiding Software-Developer! Wat
+                    leuk dat je het overweegt :)</p>
             </div>
         </div>
+        <div class="container">
 
-        <!-- Tablink with subjects -->
-        <div class="main" id="section2">
-            <button class="tablink" onclick="openPage('Engels', this, '#663398')" id="defaultOpen">Engels</button>
-            <button class="tablink" onclick="openPage('Nederlands', this, '#6b438e')">Nederlands</button>
-            <button class="tablink" onclick="openPage('Rekenen', this, '#5c3f14')">Rekenen</button>
-            <button class="tablink" onclick="openPage('Mentoruur', this, '#c9a46d')">Mentoruur</button>
-            <button class="tablink" onclick="openPage('NATIVE', this, '#c9a46d')">NATIVE</button>
-            <button class="tablink" onclick="openPage('WEB', this, '#c9a46d')">WEB</button>
-            <button class="tablink" onclick="openPage('PRO', this, '#c9a46d')">PRO</button>
-            <button class="tablink" onclick="openPage('PRA', this, '#c9a46d')">PRA</button>
+            <!-- Tablink with subjects -->
+            <div class="main" id="section2">
+                <div class="tabbox">
+                    <button class="tablink" onclick="openPage('Engels', this, '#FA329C')"
+                        id="defaultOpen">Engels</button>
+                    <button class="tablink" onclick="openPage('Nederlands', this, '#FA329C')">Nederlands</button>
+                    <button class="tablink" onclick="openPage('Rekenen', this, '#FA329C')">Rekenen</button>
+                    <button class="tablink" onclick="openPage('Mentoruur', this, '#FA329C')">Mentoruur</button>
+                    <button class="tablink" onclick="openPage('NATIVE', this, '#FA329C')">NATIVE</button>
+                    <button class="tablink" onclick="openPage('WEB', this, '#FA329C')">WEB</button>
+                    <button class="tablink" onclick="openPage('PRO', this, '#FA329C')">PRO</button>
+                    <button class="tablink" onclick="openPage('PRA', this, '#FA329C')">PRA</button>
 
-            <div id="Engels" class="tabcontent">
-                <h3>Engels</h3>
-                <p>lorem ipsum</p>
-            </div>
+                    <div id="Engels" class="tabcontent">
+                        <h3>Engels</h3>
+                        <p>Engels is een van de generieke vakken. Ik denk dat dit vak wel voor zich spreekt!</p>
+                    </div>
 
-            <div id="Nederlands" class="tabcontent">
-                <h3>Nederlands</h3>
-                <p>lorem ipsum</p>
-            </div>
+                    <div id="Nederlands" class="tabcontent">
+                        <h3>Nederlands</h3>
+                        <p>Nederlands is een van de generieke vakken. Voor het Nederlands examen zijn er 3 toetsen die
+                            je
+                            moet halen!</p>
+                    </div>
 
-            <div id="Rekenen" class="tabcontent">
-                <h3>Rekenen</h3>
-                <p>lorem ipsum</p>
-            </div>
+                    <div id="Rekenen" class="tabcontent">
+                        <h3>Rekenen</h3>
+                        <p>Rekenen spreekt voor zich. Verwar dit niet met Wiskunde!</p>
+                    </div>
 
-            <div id="Mentoruur" class="tabcontent">
-                <h3>Mentoruur</h3>
-                <p>lorem ipsum</p>
-            </div>
+                    <div id="Mentoruur" class="tabcontent">
+                        <h3>Mentoruur</h3>
+                        <p>Bij Mentoruur gaat het vooral over belangrijke algemene onderwerpen. Bijvoorbeeld stage, of
+                            een
+                            verandering in het rooster.</p>
+                    </div>
 
-            <div id="NATIVE" class="tabcontent">
-                <h3>NATIVE</h3>
-                <p>lorem ipsum</p>
-            </div>
+                    <div id="NATIVE" class="tabcontent">
+                        <h3>NATIVE</h3>
+                        <p>Bij native gaat het vooral over computerapplicaties. Bijvoorbeeld het inchecken van een
+                            vliegtuig
+                            in een vliegtuigen hangar door middel van een consoleapplicatie, of een knop die de
+                            achtergrond
+                            van je applicatie verandert! </p>
+                    </div>
 
-            <div id="WEB" class="tabcontent">
-                <h3>WEB</h3>
-                <p>lorem ipsum</p>
-            </div>
+                    <div id="WEB" class="tabcontent">
+                        <h3>WEB</h3>
+                        <p>Bij web gaat het vooral over het maken van websites, leren hoe je technieken toepast waardoor
+                            de
+                            ervaring van de gebruiker wat simpeler wordt. Je krijgt ook te maken met het maken van
+                            webapplicaties, databases, een stukje veiligheid, en functionaliteiten.</p>
+                    </div>
 
-            <div id="PRO" class="tabcontent">
-                <h3>PRO</h3>
-                <p>lorem ipsum</p>
-            </div>
+                    <div id="PRO" class="tabcontent">
+                        <h3>PRO</h3>
+                        <p>Bij PRO leer je vooral dingen zoals je projecten plannen, technische termen,
+                            stagevoorbereiding,
+                            en je CV.</p>
+                    </div>
 
-            <div id="PRA" class="tabcontent">
-                <h3>PRA</h3>
-                <p>lorem ipsum</p>
+                    <div id="PRA" class="tabcontent">
+                        <h3>PRA</h3>
+                        <p>Bij PRA leer je het toepassen van lesmateriaal in de vorm van meestal meerdere weken, en ook
+                            meestal in groepjes.</p>
+                    </div>
+                </div>
             </div>
             <script type="text/javascript">
                 function openPage(pageName, elmnt, color) {
@@ -113,26 +129,117 @@
                 document.getElementById("defaultOpen").click();
             </script>
 
-        </div>
 
-        <!-- Grid with teachers -->
-        <div class="main" id="section3">
+            <!-- Grid with teachers -->
+            <div class="main" id="section3">
 
-        </div>
+            </div>
 
-        <!-- Caroussel/Slideshow -->
-        <div class="main" id="section4">
 
-        </div>
+            <!-- Caroussel/Slideshow -->
+            <div class="main" id="section4">
 
-        <!-- Personal experience text -->
-        <div class="main" id="section5">
+                <div class="container">
+                    <div class="slideshow-container">
 
-        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="img/rooster.png" style="width: 100%">
+                            <div class="text">Een rooster van een eerste-jaars is voor het meeste deel elke week
+                                hetzelfde.
+                                Het kan wel zijn dat er in de loop van het jaar wat verandert!</div>
+                        </div>
 
-        <!-- Contact info & Google maps interactive -->
-        <div class="main" id="section6">
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="img/opleiding.png" style="width:100%">
+                            <div class="text">Het leerjaar is verdeeld in blokken. Elk blok heeft een thema en duurt
+                                ongeveer een halfjaar. In de 2e helft van het 2e jaar ga je stage lopen! </div>
+                        </div>
 
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="img/laptop.jpg" onclick="" style="width:100%">
+                            <div class="text">Je kunt versnellen als je 90% van je leerdoelen in het eerste blok
+                                (halfjaar) hebt behaald. Bij versnellen duurt je opleiding dan ook maar 3 jaar. Je doet
+                                een gedeelte van blok C in blok B </div>
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+
+                    </div>
+                    <br>
+
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+
+                    <script>
+                        // Sets slideIndex to 1
+                        let slideIndex = 1;
+
+                        // Shows slideIndex
+                        showSlides(slideIndex);
+
+                        // Adds 1 to slide index
+                        function plusSlides(n) {
+                            showSlides(slideIndex += n);
+                        }
+
+
+                        // Shows current slide
+                        function currentSlide(n) {
+                            showSlides(slideIndex = n);
+                        }
+
+                        function showSlides(n) {
+                            // Declare variable i
+                            let i;
+
+                            // Retrieve all html  elements with name "mySlides" and stores them in slides variable
+                            let slides = document.getElementsByClassName("mySlides");
+
+                            /// Retrieve all html elements with name "dot" and stores them in dot variable
+                            let dots = document.getElementsByClassName("dot");
+
+                            // Loop the slides to the first one
+                            if (n > slides.length) { slideIndex = 1 }
+
+                            // Loops the slides to the last one
+                            if (n < 1) { slideIndex = slides.length }
+
+                            // hides slides if not selected
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                            }
+
+                            // Selects active slides 
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+
+                            // Makes selected slide visible
+                            slides[slideIndex - 1].style.display = "block";
+
+                            // Makes selected slide active
+                            dots[slideIndex - 1].className += " active";
+                        }
+                    </script>
+                </div>
+            </div>
+
+            <!-- Personal experience text -->
+            <div class="main" id="section5">
+
+            </div>
+
+            <!-- Contact info & Google maps interactive -->
+            <div class="main" id="section6">
+
+            </div>
         </div>
     </div>
 </body>
