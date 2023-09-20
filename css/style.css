@@ -248,6 +248,9 @@ background-color: rgba(250, 50, 157, 0.367);
 border-radius: 2%;
 margin-top: 5vh;
 }
+#section5 p{
+    margin: 1vw;
+}
 
 
 /* Section 6 */
@@ -311,6 +314,9 @@ padding: 1vw;
     padding: 5vw;
   }
 
+  #section5 p{
+    font-size: 11px
+  }
   .contact-container p{
     padding: 5vw;
   }
